@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>Loading...</p>
+    </div>
+
+    <form class="hide-form" onreset="funReset(event)" onsubmit="funSubmit(event)">
+        <h1>Welcome</h1>
+        <input onfocus="funUpEmail()" onblur="fundownEmail()" id="txt2" class="text" type="email">
+        <label for="name" class="label-name">
+            <span class="contect-name">E-mail</span>
+        </label>
+        <span class="icon-eye"></span>
+        <input onfocus="funUpPass()" onblur="fundownPass()" id="pass" class="text" type="password">
+        <label for="name" class="label-name">
+            <span class="contect-name">Password</span>
+        </label><br>
+        <input type="radio" name="state" style="margin-left: 0px;" id="std">
+        <label for="std">Student</label>
+        <input type="radio" name="state" id="tch">
+        <label for="tch">Teacher</label>
+        <input type="radio" name="state" id="adm">
+        <label for="adm">Admin</label>
+        <p class="note">Note</p>
+        <div id="rememer">
+            <input style="cursor: pointer;" type="checkbox" id="check">
+            <label for="check">Remember Me</label>
+        </div>
+        <input class="btn" type="submit" value="submit">
+        <input class="btn" type="reset" value="reset">
+        <p class="forget">Forget My Passwoed</p>
+        <p class="by-me">E-learning Platform © 2021 Designed and Developed by Eng-Mustafa.A</p>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
